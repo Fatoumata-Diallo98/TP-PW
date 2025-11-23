@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS contacts CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE contacts;
+
+DROP TABLE IF EXISTS contacts;
+
+CREATE TABLE contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(150),
+    telephone VARCHAR(30) NOT NULL
+);
